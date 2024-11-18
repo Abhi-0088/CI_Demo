@@ -31,7 +31,7 @@ jobs:
 
       - name: run flake8
         run: |
-          flake8 app.py
+          flake8 CI_Demo.py
 
   testing:
     needs: linting
@@ -45,7 +45,7 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.9'
+          python-version: '3.12'
 
       - name: run unit test
         run: |
